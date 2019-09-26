@@ -4,10 +4,10 @@ const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require("knex");
 
-const register = require("./smart-brain-api-master 2/controllers/register");
-const signin = require("./smart-brain-api-master 2/controllers/signin");
-const profile = require("./smart-brain-api-master 2/controllers/profile");
-const image = require("./smart-brain-api-master 2/controllers/image");
+const register = require("./controllers/register");
+const signin = require("./controllers/signin");
+const profile = require("./controllers/profile");
+const image = require("./controllers/image");
 
 const db = knex({
   client: "pg",
